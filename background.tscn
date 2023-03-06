@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://g0cnfhfbqeoa"]
+
+[ext_resource type="Texture2D" uid="uid://wtheoqeym1if" path="res://nebula.jpg" id="1_fmm54"]
+
+[sub_resource type="Shader" id="Shader_11nlh"]
+code = "shader_type canvas_item;
+
+void fragment() {
+	// Place fragment code here.
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4fwp6"]
+shader = SubResource("Shader_11nlh")
+
+[node name="background" type="Sprite2D"]
+material = SubResource("ShaderMaterial_4fwp6")
+position = Vector2(984, 543)
+texture = ExtResource("1_fmm54")
+offset = Vector2(2.08165e-12, 2.08165e-12)

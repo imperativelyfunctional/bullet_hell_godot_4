@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7wr734da1gwi"]
+
+[ext_resource type="Texture2D" uid="uid://cnguc6oi28hm0" path="res://flames.png" id="1_5rwcf"]
+[ext_resource type="Texture2D" uid="uid://didutk5mwlcfy" path="res://boss2.png" id="1_uctyf"]
+[ext_resource type="Script" path="res://Boss.gd" id="2_th2o1"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hnhyd"]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[node name="Boss" type="CPUParticles2D"]
+modulate = Color(0.929412, 0.8, 0.0666667, 1)
+self_modulate = Color(3.55, 0.59, 0.07, 1)
+material = SubResource("CanvasItemMaterial_hnhyd")
+amount = 200
+lifetime = 2.0
+preprocess = 50.22
+speed_scale = 3.27
+explosiveness = 0.32
+randomness = 0.17
+lifetime_randomness = 0.04
+fract_delta = false
+local_coords = true
+texture = ExtResource("1_5rwcf")
+emission_shape = 3
+emission_rect_extents = Vector2(100, 100)
+gravity = Vector2(2.08165e-12, 2.08165e-12)
+initial_velocity_min = 44.05
+initial_velocity_max = 101.32
+angular_velocity_min = 126.87
+angular_velocity_max = 126.87
+linear_accel_min = -84.57
+linear_accel_max = -81.93
+radial_accel_min = -75.77
+radial_accel_max = -71.37
+damping_min = 41.4
+damping_max = 41.4
+angle_min = -590.0
+angle_max = -456.7
+color = Color(1.78, 1.19, 1.19, 1)
+hue_variation_max = 0.27
+
+[node name="Sprite" type="Sprite2D" parent="."]
+self_modulate = Color(6.47, 1.18, 0.59, 1)
+position = Vector2(-1.00433, 0)
+texture = ExtResource("1_uctyf")
+script = ExtResource("2_th2o1")

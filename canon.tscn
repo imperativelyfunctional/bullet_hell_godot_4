@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0xjluvifyoo2"]
+
+[ext_resource type="Script" path="res://canon.gd" id="1_4pgp2"]
+
+[node name="Canon" type="ColorRect"]
+layout_direction = 1
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4pgp2")
